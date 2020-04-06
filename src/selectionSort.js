@@ -1,4 +1,17 @@
 function selectionSort(arr) {
-  // your code here!
-  // arr is an array of unsorted integers (i.e. [3, 5, 1])
+  // return arr.sort((a, b) => a > b ? 1 : -1)
+
+  for (let i = 0; i < arr.length; i++) {
+    let minNum = Math.min(...arr.slice(i))
+
+    let minNumIndex = arr.indexOf(minNum)
+    let switcher = arr[i]
+    arr[i] = minNum
+    arr[minNumIndex] = switcher
+
+  }
+  return arr
+
+
+
 }

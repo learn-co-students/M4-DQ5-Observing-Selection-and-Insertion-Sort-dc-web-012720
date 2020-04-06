@@ -1,4 +1,12 @@
 function insertionSort(arr) {
-  // your code here!
-  // arr is an array of unsorted integers (i.e. [3, 5, 1])
+  for (let i = 1; i < arr.length; i++) {
+    let currentValue = arr[i]
+    let previousElement = i - 1
+    while (previousElement >= 0 && arr[previousElement] > currentValue) {
+      arr[previousElement + 1] = arr[previousElement]
+      previousElement--
+    }
+    arr[previousElement + 1] = currentValue
+  }
+  return arr
 }
