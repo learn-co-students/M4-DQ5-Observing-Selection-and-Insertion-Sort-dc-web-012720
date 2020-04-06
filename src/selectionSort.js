@@ -1,4 +1,16 @@
 function selectionSort(arr) {
-  // your code here!
-  // arr is an array of unsorted integers (i.e. [3, 5, 1])
+  for (let i=0; i<arr.length; i++) {
+    let minNum = i
+    for (let j = 1+i; j<arr.length; j++){
+    if (arr[minNum] > arr[j] ){
+      minNum = j
+    }
+  }
+  if (minNum !== i) {
+    let tmp = arr[i]
+    arr[i] = arr[minNum]
+    arr[minNum] = tmp
+  }
+}
+  return arr
 }
