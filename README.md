@@ -1,7 +1,7 @@
 ## Sort!
 
 All you need to focus on is writing two sorting algorithms. One in ```sorts/insertionSort.js``` and the other in ```sorts/selectionSort.js```.
-
+   
 ## Selection Sort
 
   See this link: (https://en.wikipedia.org/wiki/Selection_sort)
